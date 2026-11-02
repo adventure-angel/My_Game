@@ -1,0 +1,11 @@
+/* The dismiss control stays inside the dialog focus scope and above scrolling content. */
+body .dialog .dialog-corner-close{position:sticky;top:0;float:right;z-index:30;display:flex;align-items:center;justify-content:center;flex:none;align-self:flex-end;width:44px;height:44px;min-height:44px;margin:0 0 -44px auto;padding:9px;border:1px solid #e3c798b3;border-radius:50%;background:linear-gradient(145deg,#58405bea,#24182fed);box-shadow:0 2px 9px #140c2666,inset 0 1px #fff3d02b;color:#ffedc5;cursor:pointer;touch-action:manipulation}
+body .dialog .dialog-corner-close svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
+body .dialog .dialog-corner-close:focus-visible{outline:2px solid #fff2c9;outline-offset:2px}
+body .dialog .dialog-corner-close:active{filter:brightness(1.3)}
+body .dialog[data-skin=boutique]>.dialog-corner-close,body .dialog[data-skin=preparation]>.dialog-corner-close{position:absolute;right:10px;top:10px;margin:0}
+body .dialog[data-skin=boutique] .boutique-fixed .boutique-emblem{right:42px;width:58px;opacity:.7}
+body .dialog[data-skin=boutique] .boutique-footer:has(button[hidden]){display:none}
+body .dialog .prep-header{padding-right:60px}
+body .dialog button[hidden]{display:none!important}
+body .dialog>.shop-head,body .dialog>.mail-heading{padding-right:44px}

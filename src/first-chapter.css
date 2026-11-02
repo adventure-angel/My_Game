@@ -1,0 +1,57 @@
+/* Clear objectives without adding another tall battle panel. */
+.tile.chapter-ice .tile-face{box-shadow:inset 0 0 8px #a5e7ff75;outline:1px solid #bbecffe0;outline-offset:-2px;border-radius:10px}
+.tile .chapter-frost{position:absolute;inset:4%;border:2px solid #c6f3ffb8;border-radius:8px;background:linear-gradient(140deg,#cbf4ff45,transparent 28%,transparent 73%,#c1f4ff55);color:#e5ffff;font:11px/1 system-ui;text-align:left;padding:3px;pointer-events:none;z-index:5}
+.tile.practice-target{outline:2px solid #ffedb6;outline-offset:-3px;box-shadow:inset 0 0 12px #ffd28b77}
+body[data-screen=game] .target>span{white-space:normal;line-height:1.4;display:block;overflow-wrap:anywhere}
+.chapter-brief{padding:8px 10px;margin:0 0 8px;border:1px solid #d5b88a55;border-radius:12px;text-align:left;background:#38274080}
+.chapter-goals{display:flex;flex-wrap:wrap;gap:5px}
+.chapter-goals>span{border:1px solid #a6d7ef55;color:#f6e1b9;padding:4px 7px;border-radius:8px;font:11px/1.4 system-ui;background:#2a253b}
+.chapter-brief>p{font:11px/1.6 system-ui!important;margin:6px 0!important;color:#dbc9df}
+.chapter-stars{display:block;font:10px/1.5 system-ui;color:#c6abc9;margin-top:6px}
+.chapter-recommend{display:flex;align-items:center;gap:7px;margin-top:6px;padding-top:6px;border-top:1px solid #d6b88533}
+.chapter-recommend .portrait-art{width:35px!important;height:35px!important;flex:none;border-radius:10px}
+.chapter-recommend>div{flex:1;min-width:0}.chapter-recommend b{display:block;font:11px/1.4 system-ui;color:#f5deb1}.chapter-recommend small{display:block;font:10px/1.5 system-ui;color:#cbb8d4}
+.chapter-recommend button{min-width:44px;min-height:44px;border:1px solid #d8ba8c77;border-radius:10px;background:#6c4d6977;color:#f9e2b2;font:11px system-ui}
+.first-light-prep .chapter-brief{padding:5px 8px}.first-light-prep .chapter-brief>p{display:none}
+.chapter-result-goals{display:flex;justify-content:center;flex-wrap:wrap;gap:7px;margin:10px 0}
+.chapter-result-goals>span{font:12px system-ui;border:1px solid #d3b18b77;border-radius:10px;padding:7px 9px;background:#49314e66;color:#efd5bd}
+.chapter-result-goals>.complete{border-color:#b8d5a888;color:#e0f1c7}
+.chapter-failure{padding:12px;margin:12px 0;background:#3c2a4680;border:1px solid #d6b08a66;border-radius:15px;text-align:left}
+.chapter-failure>b{font:13px/1.6 system-ui;color:#ffe3b3}.chapter-failure p{font:12px/1.7 system-ui;color:#d5bfd8;margin:6px 0 0}
+.chapter-supply{font-size:12px;color:#f6dfb4}
+.mio-invitation{display:grid;grid-template-columns:52px 1fr;gap:8px 10px;padding:12px;text-align:left;border:1px solid #9cd2df77;border-radius:16px;background:linear-gradient(120deg,#28516c66,#39294399);margin:12px 0}
+.mio-invitation>.portrait-art{width:52px;height:68px!important;border-radius:18px 18px 10px 10px;grid-row:1/3}
+.mio-invitation b{font:14px/1.5 system-ui;color:#f7dfb8}.mio-invitation p{font:11px/1.6 system-ui;color:#dac6da;margin:4px 0}.mio-invitation small{font:10px system-ui;color:#c6dae3}
+.mio-invitation button{grid-column:2;min-height:44px;border:1px solid #d4bc91;border-radius:10px;background:#60506a;color:#ffe9bf;font:12px system-ui}
+.partner-dock .partner-practice{display:block;width:100%;min-height:44px;border:1px solid #dcc79b77;background:#3c2b498c;border-radius:13px;color:#eddbbd;font:12px system-ui;margin:4px 0 7px}
+.practice-portrait{width:76px;height:90px;margin:4px auto 12px;border:1px solid #e0bf87;border-radius:26px;overflow:hidden}.practice-portrait>.portrait-art{width:100%;height:100%}
+/* Different arrangements reserve separate places for the first four gifts. */
+.rg-cushions.rg-roomset-0{left:9%;top:54%;width:24%}.rg-cushions.rg-roomset-1{left:3%;top:58%;width:23%;transform:rotate(-6deg)}
+.rg-vase.rg-roomset-0{left:43%;top:36%;width:10%}.rg-vase.rg-roomset-1{left:1%;top:35%;width:11%}
+.rg-tea.rg-roomset-0{left:16%;top:78%;width:12%}.rg-tea.rg-roomset-1{left:16%;top:80%;width:14%;transform:rotate(-10deg)}
+.rg-flowers.rg-roomset-0{left:-6%;top:0;width:33%}.rg-flowers.rg-roomset-1{left:auto;right:-5%;top:26%;width:29%;transform:scaleX(-1)}
+.rg-object-2.rg-style-1:not(.rg-legacy-layout){transform:translate(-50%,-50%) rotate(-7deg);filter:drop-shadow(3px 5px 2px #160f2c88)}
+.rg-firstlight-reveal .rg-warmth{animation:rg-welcome 1.5s ease-out both}
+.rg-tools{gap:5px}.rg-tools button{font-size:10px;padding:4px 7px}
+.room-event-dock .rg-prize>.collection-art{width:100%;height:100%}
+.room-chapter-cards{display:grid;gap:10px;margin-top:14px}
+.room-chapter-cards button{display:flex;align-items:center;gap:10px;min-height:85px;padding:10px;border:1px solid #c7aa8177;border-radius:15px;background:#68496630;text-align:left;color:#f7dfb3}
+.room-chapter-cards .collection-art{width:54px;height:54px;flex:none}.room-chapter-cards b{display:block;font:13px/1.5 system-ui}.room-chapter-cards small,.room-chapter-cards span{display:block;font:10px/1.7 system-ui;color:#d0b8d2}
+.room-event-memories{display:grid;gap:8px;margin:12px 0}.room-event-memories button{min-height:44px;padding:8px 12px;text-align:left;border:1px solid #d6bb9077;border-radius:12px;color:#f6deaf;background:#4d345466}
+.room-story{position:absolute;z-index:25;inset:0;background:linear-gradient(#21162b55,transparent 26%,transparent 55%,#24142c88);display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding:12px 12px 150px;box-sizing:border-box}
+.room-story-skip{position:absolute;top:16px;right:12px;min-height:44px;min-width:84px;padding:6px 12px;background:#30233ee8;border:1px solid #ddc48f;border-radius:15px;color:#ffe7b4;font:11px system-ui}
+.room-story-copy{max-width:360px;width:100%;padding:14px 16px;border:1px solid #ebd8b1;border-radius:18px;background:#f5e7d7f0;box-sizing:border-box;box-shadow:0 6px 24px #160f2a66;color:#5d3b59;animation:room-story-in .3s ease-out both}
+.room-story-copy small{font:10px/1.5 system-ui;color:#88617d}.room-story-copy p{font:14px/1.8 Georgia,'Songti SC',serif;margin:6px 0 10px}
+.room-story-dots{display:flex;gap:5px;justify-content:center}.room-story-dots i{width:14px;height:3px;border-radius:3px;background:#bea8be}.room-story-dots .done{background:#8d627d}
+.room-visit-faces{position:relative;display:flex;align-items:center;justify-content:center;gap:9px;margin-bottom:18px;padding:12px;border-radius:18px;border:1px solid #edcda2;background:#36233cda}
+.room-visit-faces>div{text-align:center}.room-visit-faces .portrait-art{width:46px;height:54px;display:block;border-radius:15px 15px 8px 8px}.room-visit-faces span:last-child{display:block;color:#f2d7b5;font:10px/1.5 system-ui;margin-top:4px}
+.room-photo-flash{position:absolute;inset:0;background:#fff8ed;pointer-events:none;animation:room-shutter .6s ease-out both}
+@keyframes room-shutter{from{opacity:.7}to{opacity:0}}@keyframes room-story-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@media(max-height:650px){.room-story{padding-bottom:140px}.room-story-copy{padding:10px 12px}.room-story-copy p{font-size:12px}.room-visit-faces{margin-bottom:10px}.chapter-brief{padding:6px 8px}}
+@media(max-height:560px){.partner-dock .art-skill p{font-size:10px!important;line-height:1.5!important}.partner-dock .art-skill{padding:7px 10px}.partner-dock .partner-practice{margin:3px 0 4px}.room-visit-faces .portrait-art{width:38px;height:44px}}
+.reduced .room-story *{animation:none!important}.reduced .room-photo-flash{display:none}
+@media(prefers-reduced-motion:reduce){.room-story *{animation:none!important}.room-photo-flash{display:none}}
+
+/* Stories advance at the reader's pace, including after app backgrounding. */
+.room-story-next{display:block;width:100%;min-height:44px;margin-top:12px;padding:8px 12px;border:1px solid #b48f72;border-radius:12px;background:#fff4d8;color:#64405b;font:600 14px/1.5 system-ui;touch-action:manipulation}
+.room-story-next:focus-visible{outline:3px solid #92698c;outline-offset:2px}

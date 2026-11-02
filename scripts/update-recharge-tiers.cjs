@@ -1,0 +1,12 @@
+const fs=require('fs');
+let s=fs.readFileSync('src/economy-flow.js','utf8');
+const start=s.indexOf("<div class=\"stage-choices\">'+[['d10',1,10]");
+const end=s.indexOf("<h3>绯镜 · 专属直购</h3>",start);
+if(start<0||end<0)throw Error('Recharge block not found');
+s=s.slice(0,start)+"'+renderRechargeOffers()+'"+s.slice(end);
+s=s.replace('金币可购买道具与澪，不能解锁小焰、青芽或绯镜。','金币可购买道具，并永久解锁澪、小焰、青芽。绯镜仅限 ¥6 人民币直购。');
+s=s.replace('小焰、青芽和装饰使用钻石兑换；钻石可单向兑换金币。','钻石可兑换永久装饰，或单向兑换金币。普通伙伴均可用金币解锁。');
+fs.writeFileSync('src/economy-flow.js',s);
+s=fs.readFileSync('src/art-flow.js','utf8');
+s=s.replace("i===1?'金币可通过签到与闯关获得':'钻石仅通过充值获得'","'金币可通过签到与闯关获得'");
+fs.writeFileSync('src/art-flow.js',s);

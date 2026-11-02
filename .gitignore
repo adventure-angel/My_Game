@@ -1,0 +1,9 @@
+release/
+/index.html
+mobile-play.html
+star-candy-v*-*.html
+/media/trailer/star-candy-trailer-final-1080p.mp4
+node_modules/
+.DS_Store
+Thumbs.db
+*.log

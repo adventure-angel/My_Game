@@ -1,0 +1,18 @@
+/* Compact resource row. v21 overrides below restore the original heading. */
+.economy-home .lobby-layout{padding:10px 12px 0;gap:14px;width:100%}
+.economy-home .lobby-topbar{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.15fr) 36px;align-items:center;gap:6px;width:100%;min-height:40px;pointer-events:auto}
+.economy-home .lobby-topbar>.wallet-row{display:contents;margin:0}
+.economy-home .lobby-topbar .wallet-row>button,.economy-home .lobby-topbar>.stamina-compact{position:static;display:flex;align-items:center;justify-content:center;gap:4px;box-sizing:border-box;min-width:0;width:100%;height:36px;min-height:36px;padding:3px 5px;border:1px solid #d9bb8b88;border-radius:18px;background:#24192fd9;color:#ffedcb;box-shadow:0 2px 8px #130b2644;font:12px system-ui;white-space:nowrap}
+.economy-home .lobby-topbar .wallet-row>button>span:last-child{display:none}
+.economy-home .lobby-topbar .wallet-row .prop-art{width:26px;height:26px;flex:none}
+.economy-home .lobby-topbar .wallet-row b,.economy-home .lobby-topbar .stamina-value{font:600 12px/1 system-ui;min-width:0;letter-spacing:-.3px}
+.stamina-bottle{display:block;width:27px;height:32px;flex:none;filter:drop-shadow(0 2px 3px #23102d66)}
+.economy-home .lobby-topbar .stamina-bottle{width:21px;height:27px}
+.economy-home .lobby-layout .lobby-topbar .lobby-settings{position:static;display:flex;align-items:center;justify-content:center;box-sizing:border-box;width:36px;height:36px;min-height:36px;padding:0;margin:0;border-radius:50%;background:#24192fd9;border:1px solid #d9bb8b88}
+.economy-home .lobby-layout .lobby-topbar .lobby-settings .lobby-icon{width:23px;height:23px;margin:0}
+.economy-home .lobby-layout .art-lobby-head{padding:0;min-height:0;width:100%}
+.economy-home .lobby-layout .screen-title{font-size:26px;line-height:1.2}
+.economy-home .lobby-layout .screen-title small{font-size:9px;margin-top:5px;letter-spacing:1px}
+.economy-home .lobby-layout .lobby-left-rail{margin-top:0;gap:13px 10px}
+@media(max-width:350px){.economy-home .lobby-layout{padding:8px 9px 0;gap:12px}.economy-home .lobby-topbar{gap:5px;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.18fr) 34px}.economy-home .lobby-topbar .wallet-row b,.economy-home .lobby-topbar .stamina-value{font-size:11px}.economy-home .lobby-topbar .wallet-row .prop-art{width:22px;height:24px}.economy-home .lobby-topbar .stamina-bottle{width:18px}.economy-home .lobby-topbar .wallet-row>button,.economy-home .lobby-topbar>.stamina-compact{padding:3px;gap:3px}.economy-home .lobby-layout .lobby-topbar .lobby-settings{width:34px;height:34px;min-height:34px}.economy-home .lobby-layout .screen-title{font-size:24px}}
+@media(max-height:620px){.economy-home .lobby-layout{gap:9px;padding-top:8px}.economy-home .lobby-layout .screen-title{font-size:23px}.economy-home .lobby-layout .lobby-left-rail{gap:8px}.economy-home .lobby-layout .screen-title small{display:none}}

@@ -1,0 +1,3 @@
+const fs=require('fs');
+const data=fs.readFileSync('assets/design-header-options/three-options.png').toString('base64');
+fs.writeFileSync('star-candy-header-designs.html','<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>星糖物语 · 顶栏三版设计</title><style>body{margin:0;background:#1f172b;color:#fbe8ca;font:14px/1.7 system-ui}main{max-width:850px;margin:auto}header{padding:14px}h1{font-size:20px;margin:0}p{font-size:12px;margin:6px 0;color:#d6c1dc}img{display:block;width:100%;height:auto}</style><main><header><h1>顶部资源栏 · 三版设计</h1><p>A 轻盈悬浮 / B 月光连栏 / C 星辉嵌饰</p><p>金币、钻石、体力、设置同一行；本页仅为视觉设计稿。</p></header><img alt="三种顶部资源栏设计对比" src="data:image/png;base64,'+data+'"></main></html>');

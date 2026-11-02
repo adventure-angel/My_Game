@@ -1,0 +1,49 @@
+/* A four-panel comic with a single readable frame on small screens. */
+body[data-screen=prologue] .top,body[data-screen=prologue] .edition-label{display:none}
+body[data-screen=prologue] .screen{padding:0;overflow:hidden}
+.prologue-page,.prologue-page *{box-sizing:border-box}
+.prologue-page{height:100%;min-height:0;display:flex;flex-direction:column;overflow:hidden;position:relative;isolation:isolate;background:radial-gradient(ellipse at 15% 15%,#67506b55,transparent 55%),linear-gradient(145deg,#231b34,#151426 75%);color:#f8e7ce;font-family:Georgia,'Songti SC','Noto Serif SC',serif}
+.prologue-page button{font:inherit;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent;color:inherit}
+.prologue-page button:focus-visible{outline:2px solid #f9e6b5;outline-offset:-3px}
+.comic-header{flex:none;display:flex;align-items:center;gap:6px;padding:8px 12px 6px;padding-top:max(8px,env(safe-area-inset-top));min-height:57px;border-bottom:1px solid #ddbf8b28}
+.comic-header>div{flex:1;min-width:0}.comic-header small{display:block;color:#bfa6c1;letter-spacing:2.5px;font:8px/1.4 system-ui}.comic-header b{font-size:16px;font-weight:400;line-height:1.6;letter-spacing:1px}
+.comic-header button{flex:none;min-width:44px;min-height:44px;border:1px solid #dfc29555;border-radius:14px;padding:5px 11px;background:#58405b44;font-size:12px;color:#ead7b7}.comic-header button span{margin-left:2px;font-size:16px}
+.comic-reading{flex:1;min-height:0;display:flex;flex-direction:column;padding:12px 14px 0;gap:11px}
+.comic-image-wrap{flex:1;min-width:0;min-height:70px;position:relative;display:flex;justify-content:center;align-items:center;overflow:hidden}
+.comic-art{height:100%;width:auto;max-width:100%;max-height:100%;aspect-ratio:1;position:relative;isolation:isolate;padding:0;border:1px solid #d6b78a;border-radius:5px 22px 5px 22px;overflow:hidden;background:#292135;box-shadow:0 9px 28px #0d081f66,inset 0 0 0 4px #e6d0a429;display:block}
+/* A square sprite must have equal dimensions even when the viewport is narrow.
+   Out-of-flow artwork keeps its size from feeding back into the flex layout. */
+.comic-image-wrap>.comic-art{position:absolute;flex:none;width:var(--comic-side,0px);height:var(--comic-side,0px);max-width:none;max-height:none;min-width:0;min-height:0}
+.comic-illustration{position:absolute;inset:0;display:block;background-image:var(--prologue-atlas);background-repeat:no-repeat;background-size:200% 200%;background-position:var(--comic-x) var(--comic-y);animation:comic-camera 13s ease-out both;transform-origin:50% 50%}
+.comic-art-0{--comic-x:0%;--comic-y:0%}.comic-art-1{--comic-x:100%;--comic-y:0%}.comic-art-2{--comic-x:0%;--comic-y:100%}.comic-art-3{--comic-x:100%;--comic-y:100%}
+.comic-art-1 .comic-illustration{transform-origin:48% 38%}.comic-art-2 .comic-illustration{transform-origin:35% 45%}
+.comic-sheen{position:absolute;inset:0;pointer-events:none;border:5px solid #f7dca222;box-shadow:inset 0 -26px 28px #1c132c44;z-index:2}
+.comic-panel-number{position:absolute;top:9px;left:9px;z-index:3;font:italic 14px/1 Georgia;color:#fff0d0;background:#352538b8;border:1px solid #e3cfa177;padding:8px;border-radius:50%}
+.comic-mote{position:absolute;z-index:2;pointer-events:none;width:3px;height:3px;background:#ffe6af;border-radius:50%;box-shadow:0 0 8px 2px #f4cd9d88;animation:comic-star 5s ease-in-out infinite;opacity:0}
+.mote-0{left:15%;top:70%;animation-delay:.2s}.mote-1{left:71%;top:35%;animation-delay:1.1s}.mote-2{left:40%;top:53%;animation-delay:2.3s}.mote-3{left:82%;top:77%;animation-delay:3.4s}.mote-4{left:23%;top:24%;animation-delay:4.1s}
+.comic-copy{flex:none;position:relative;border-left:2px solid #d7bc90;padding:0 10px 0 12px;min-height:158px;max-height:45%;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}
+.comic-copy-heading small{font:10px/1.5 system-ui;letter-spacing:1px;color:#c5a8cc}.comic-copy h1{font-weight:400;font-size:21px;line-height:1.5;margin:3px 0 7px;color:#ffdfaa;outline:none}
+.comic-dialogue{font:14px/1.85 system-ui;margin:0;color:#e8dbe9;white-space:pre-line;min-height:5.55em}
+.comic-footer{flex:none;padding:1px 14px max(9px,env(safe-area-inset-bottom));background:linear-gradient(transparent,#171428 30%)}
+.comic-progress{display:flex;justify-content:center;gap:2px;margin:0 auto 1px}
+.comic-progress button{width:44px;min-height:44px;border:0;background:none;display:grid;place-items:center;padding:0}
+.comic-progress button span{font:10px/1 system-ui;color:#bfa8c8;border-bottom:2px solid #7b5d7c;padding:5px 9px}.comic-progress [aria-current=step] span{border-color:#f5d5a1;color:#ffebc7}
+.comic-actions{display:flex;gap:9px;align-items:stretch}.comic-prev{width:46px;flex:none;border:1px solid #b89e8377;background:#49354e66;border-radius:13px;font-size:24px!important;min-height:46px}.comic-prev:disabled{opacity:.35;cursor:default}
+.comic-next{flex:1;display:flex;justify-content:center;align-items:center;gap:11px;min-height:46px;min-width:0;padding:9px 12px;border:1px solid #ffe9b5;border-radius:14px;background:linear-gradient(120deg,#f8e8bd,#e6c58b);box-shadow:inset 0 0 0 3px #fff8d533,0 3px #a37a59;color:#543443!important;font-size:15px!important;letter-spacing:.5px;font-weight:600!important}.comic-next>span{font-size:18px;font-weight:400}
+.comic-reading-hint{display:block;margin-top:8px;text-align:center;font:9px/1.4 system-ui;color:#b39bbf}
+.comic-grid{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;display:grid;grid-template-columns:1fr;gap:14px;padding:14px;align-content:start}
+.comic-grid article{border:1px solid #ccb28a66;border-radius:5px 20px 5px 20px;overflow:hidden;background:#4a344144;min-width:0}
+.comic-grid .comic-art{width:100%;height:auto;border:0;border-radius:0;box-shadow:none;aspect-ratio:1}.comic-grid .comic-illustration{animation:none;transform:none}
+.comic-grid article>div{padding:12px}.comic-grid small{font:10px system-ui;color:#c9aed0}.comic-grid h2{font-size:19px;font-weight:400;line-height:1.6;color:#ffe0b0;margin:5px 0}.comic-grid p{font:13px/1.9 system-ui;color:#e4d3e5;white-space:pre-line;margin:0}
+.comic-overview-footer{flex:none;padding:9px 14px max(10px,env(safe-area-inset-bottom));border-top:1px solid #c9aa7c33}.comic-overview-footer .comic-next{width:100%}
+.prologue-replay{display:flex!important;gap:12px;align-items:center;text-align:left;width:100%;padding:12px!important;margin-top:14px!important;min-height:52px}
+.prologue-replay>span:nth-child(2){flex:1}.prologue-replay small{display:block;font:10px/1.7 system-ui;color:#c5afce}
+@keyframes comic-camera{from{transform:scale(1)}to{transform:scale(1.035)}}
+@keyframes comic-star{0%,100%{opacity:0;transform:translateY(5px) scale(.5)}40%{opacity:.8}75%{opacity:0;transform:translateY(-22px) scale(1)}}
+@media(max-height:650px){.comic-header{min-height:50px;padding-top:4px;padding-bottom:2px}.comic-reading{gap:7px;padding-top:8px}.comic-copy{min-height:135px;padding-left:10px}.comic-copy h1{font-size:18px;margin-bottom:4px}.comic-dialogue{font-size:12px;line-height:1.8}.comic-reading-hint{margin-top:6px}.comic-footer{padding-bottom:6px}.comic-progress button{min-height:40px}}
+@media(max-width:350px){.comic-header b{font-size:14px}.comic-header button{padding:4px 8px}.comic-copy h1{font-size:18px}.comic-dialogue{font-size:13px}.comic-copy{min-height:153px}.comic-next{font-size:13px!important}.comic-reading{padding-inline:10px}.comic-footer{padding-inline:10px}}
+@media(max-height:480px){.comic-reading{flex-direction:row;gap:10px;align-items:stretch}.comic-image-wrap{flex:1;min-width:0}.comic-copy{flex:1;min-width:0;min-height:0;max-height:100%;padding-left:8px}.comic-copy h1{font-size:16px}.comic-dialogue{font-size:11px;line-height:1.7}.comic-footer{padding-top:4px}.comic-progress{display:none}.comic-reading-hint{display:none}}
+.comic-reduced *{animation:none!important;transition:none!important}.comic-reduced .comic-mote{display:none}
+body[data-art-hidden=true] .prologue-page *{animation-play-state:paused!important}
+.comic-paused *{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.prologue-page *{animation:none!important;transition:none!important}.comic-mote{display:none}}

@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f4efff">
+<title>星糖物语 · v47 72关 · 自由闯关</title>
+<link rel="stylesheet" href="style-1.3c450c81cb9e.css">
+<link rel="stylesheet" href="style-2.c7627f3be3a5.css"><link rel="stylesheet" href="style-3.c7627f3be3a5.css"><link rel="stylesheet" href="style-4.c7627f3be3a5.css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style-5.1f0511238928.css">
+<link rel="stylesheet" href="style-6.e9d29ac4ab6b.css">
+<link rel="stylesheet" href="style-7.6dd449fc1741.css">
+</head>
+<body><style>#bootGuard{position:fixed!important;inset:0!important;z-index:2147483647!important;display:flex;align-items:center;justify-content:center;padding:24px;background:#20162e;color:#ffedc4;font:16px/1.7 system-ui;text-align:center}#bootGuard[hidden]{display:none!important}#bootGuard h1{font-size:30px;letter-spacing:4px}#bootGuard pre{white-space:pre-wrap;overflow-wrap:anywhere;font:13px/1.7 system-ui;color:#ded1ed}#bootRetry{min-height:44px;padding:8px 24px;border:1px solid #ead096;border-radius:24px;background:#f4dfa6;color:#392542}</style><section id="bootGuard" role="status"><div><h1>星糖物语</h1><p id="bootStatus">正在打开小屋…</p><pre id="bootDetail">v47 · 72关 · 自由闯关</pre><button id="bootRetry" hidden>重新打开</button></div></section><script id="bootGuardScript">// Runs before game resources. Never reads, clears or uploads player storage.
+(function () {
+  'use strict';
+  var stage = '页面已打开', done = false, failed = false;
+  var box = document.getElementById('bootGuard');
+  var copy = document.getElementById('bootStatus');
+  var detail = document.getElementById('bootDetail');
+  var retry = document.getElementById('bootRetry');
+  function fail(reason) {
+    if (done) return;
+    failed = true;
+    box.hidden = false;
+    copy.textContent = '启动暂未完成，请截图反馈';
+    detail.textContent = 'v47 · ' + stage + '\n' + String(reason).slice(0,240) + '\n现有存档未被清除。';
+    retry.hidden = false;
+  }
+  window.StarCandyBoot = {
+    stage: function (name) { stage = name; if (!failed) copy.textContent = name + '…'; },
+    finish: function () {
+      requestAnimationFrame(function () {
+        var screen = document.getElementById('screen');
+        if (!screen || !screen.children.length) { fail('游戏首页没有生成'); return; }
+        if (failed) return;
+        done = true; clearTimeout(timer); box.hidden = true;
+      });
+    }
+  };
+  retry.onclick = function () { location.reload(); };
+  window.addEventListener('error', function (event) {
+    if (event.target && event.target.tagName === 'SCRIPT') fail('程序文件未载入：' + (event.target.id || 'runtime'));
+    else if (event.message) fail(event.message + ' · 行 ' + (event.lineno || '?'));
+  }, true);
+  window.addEventListener('unhandledrejection', function (event) {
+    fail(event.reason && event.reason.message || '启动任务未完成');
+  });
+  window.addEventListener('pageshow', function () {
+    document.body.dataset.artHidden = String(document.hidden);
+  });
+  var timer = setTimeout(function () { fail('等待超过 20 秒，可重新打开；如果仍停留，请发送此画面。'); }, 20000);
+})();
+</script>
+<div class="app">
+ <header class="top"><div class="brand"><button class="brand-mark" id="homeButton" aria-label="返回首页" style="border:0;font:inherit">✦</button><div>星糖物语<small>STAR CANDY · WISH COLLECTOR</small></div></div><div class="top-right"><button class="icon-btn" id="help" aria-label="玩法说明">?</button><button class="icon-btn" id="settings" aria-label="设置">⚙</button><button class="icon-btn" id="pause" aria-label="暂停游戏">Ⅱ</button></div></header>
+ <main class="screen" id="screen"></main>
+ <main class="main" id="gamePage" hidden>
+  <aside class="story"><div class="eyebrow">A LITTLE MAGIC, A LITTLE JOY</div><h1>交换一颗星，<br><span>遇见小幸运。</span></h1><p>旅途不必匆忙。和你的 AI 伙伴一起，<br>把散落的星糖，变成闪闪发光的心愿。</p><div class="illustration"><div class="orbit"></div><div class="big-character" id="heroArt"></div><div class="floating f1" id="float1"></div><div class="floating f2" id="float2"></div><div class="floating f3" id="float3"></div></div><div class="story-note">选择陪伴你的伙伴 · 满能量时释放星愿共鸣</div><div class="companions" id="companions"></div></aside>
+  <section class="game" aria-label="星愿消除">
+   <div class="mode-tabs"><button id="storyMode" class="mode-tab active" aria-pressed="true">星愿旅途</button><button id="timeMode" class="mode-tab" aria-pressed="false">90 秒星光挑战</button></div>
+   <div class="level-head"><div><h2 id="levelTitle">01 · 云朵花园</h2><small id="levelSubtitle">交换相邻星糖，连接三个同色图案</small></div><button class="map-btn" id="map">关卡地图 ↗</button></div>
+   <div class="hud"><div class="metric"><span>本局星光</span><strong id="score">0</strong></div><div class="metric target"><span id="targetLabel">心愿目标</span><strong id="targetText">0 / 1,800</strong><div class="progress"><i id="goalBar"></i></div></div><div class="metric moves"><span id="movesLabel">剩余步数</span><strong id="moves">22</strong></div></div>
+   <div id="coach" class="coach" hidden role="status"></div>
+   <div class="board-shell" id="boardShell"><div id="board" class="board" role="group" aria-label="七乘七星糖棋盘"></div></div>
+   <div class="board-caption" id="caption" aria-live="polite">四连造直线，五连造彩虹，T / L 形造爆炸</div>
+   <div class="tool-row"><button class="tool" id="hint">✧ 提示 <b>免费</b></button><button class="tool" id="hammer">♢ 星锤 <b id="hammerCount">2</b></button><button class="tool" id="shuffle">⟳ 重排 <b id="shuffleCount">1</b></button></div>
+   <div class="skill-box"><button id="partner" class="skill-avatar icon-btn" aria-label="选择伙伴"></button><div class="skill-info"><strong id="partnerName">月见 · 星愿共鸣</strong><small id="energyText">消除 40 颗星糖，为伙伴充能</small><div class="progress"><i id="energyBar"></i></div></div><button class="skill-btn" id="skill">共鸣</button></div>
+  </section>
+ </main>
+ <nav class="bottom-nav" id="pageNav" aria-label="主导航"><button data-route="home"><b>⌂</b>首页</button><button data-route="map"><b>♧</b>旅途</button><button data-route="partners"><b>♡</b>伙伴</button><button data-route="records"><b>✧</b>收藏</button></nav>
+ <footer class="footer"><span id="record">星愿旅途 · 每一步都算数</span><span>不赶路，去感受路。✦</span></footer>
+</div>
+<div class="veil" id="veil" hidden><section class="dialog" id="dialog" role="dialog" aria-modal="true" aria-labelledby="dialogTitle"></section></div>
+<div class="toast" id="toast" role="status"></div>
+<script id="engine" defer src="runtime-1.4580dcb190ed.js"></script>
+<script id="elementEffects" defer src="runtime-2.cccef4a1bdf2.js"></script>
+<script id="elementRules" defer src="runtime-3.b1b28f5d6936.js"></script>
+<script id="gameMusic" defer src="runtime-4.c500c079641c.js"></script>
+<script id="prologueReader" defer src="runtime-5.5d6718bca363.js"></script>
+<script id="releaseConfig" defer src="runtime-6.cb416242d3e8.js"></script>
+<script id="saveStore" defer src="runtime-7.1c63ad93d0eb.js"></script>
+<script id="playtestData" defer src="runtime-8.0525d5e6f935.js"></script>
+<script id="tapCloudAdapter" defer src="runtime-9.851ebe07718a.js"></script>
+<script id="appScript" defer src="runtime-10.375743052d24.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+/* v23: title and all four resource/settings controls share the top row. */
+.economy-home .lobby-layout{display:grid;grid-template-columns:max-content minmax(0,1fr);align-items:center;column-gap:8px;row-gap:0;padding:12px 12px 0}
+.economy-home .lobby-layout .art-lobby-head{grid-column:1;grid-row:1;min-height:40px;width:auto;align-items:center;padding:0}
+.economy-home .lobby-layout .screen-title{font-size:clamp(19px,5.5vw,25px);letter-spacing:0;line-height:1.2;padding:0;white-space:nowrap;text-shadow:0 2px 5px #190c28}
+.economy-home .lobby-layout .screen-title small{position:absolute;top:62px;left:12px;display:block;font-size:9px;line-height:14px;letter-spacing:1px;margin:0;white-space:nowrap}
+.economy-home .lobby-layout .moonlight-ribbon{grid-column:2;grid-row:1;grid-template-columns:minmax(44px,1fr) minmax(42px,.8fr) minmax(62px,1.25fr) 44px;height:46px;min-height:46px;padding:0 3px;border-radius:18px;border-color:#d4b58999;box-shadow:inset 0 1px 2px #fff0c72b,0 2px 6px #1b102b55}
+.economy-home .lobby-layout .moonlight-ribbon:before,.economy-home .lobby-layout .moonlight-ribbon:after{display:none}
+.economy-home .lobby-layout .moonlight-ribbon .wallet-row>button,.economy-home .lobby-layout .moonlight-ribbon>.stamina-compact,.economy-home .lobby-layout .moonlight-ribbon>.lobby-settings{inset:auto;flex-direction:row;height:44px;min-height:44px;width:100%;padding:0 2px;gap:2px}
+.economy-home .lobby-layout .moonlight-ribbon .wallet-row .prop-art{width:20px;height:24px}
+.economy-home .lobby-layout .moonlight-ribbon .stamina-bottle{width:16px;height:24px}
+.economy-home .lobby-layout .moonlight-ribbon .wallet-row b,.economy-home .lobby-layout .moonlight-ribbon .stamina-value{font-size:10px;letter-spacing:-.3px}
+.economy-home .lobby-layout .moonlight-ribbon>.lobby-settings .lobby-icon{width:19px;height:19px;flex:none}
+.economy-home .lobby-layout .moonlight-ribbon .wallet-row>button:after,.economy-home .lobby-layout .moonlight-ribbon>.stamina-compact:after{top:15px;height:14px}
+.economy-home .lobby-layout .lobby-left-rail{grid-column:1/-1;grid-row:2;margin-top:30px}
+@media(max-width:350px){.economy-home .lobby-layout{padding:10px 8px 0;column-gap:5px}.economy-home .lobby-layout .screen-title{font-size:19px}.economy-home .lobby-layout .screen-title small{left:8px;top:60px;font-size:8px}.economy-home .lobby-layout .moonlight-ribbon{grid-template-columns:minmax(44px,1fr) minmax(42px,.75fr) minmax(62px,1.3fr) 44px;padding:0 2px}.economy-home .lobby-layout .moonlight-ribbon .wallet-row .prop-art{width:17px;height:22px}.economy-home .lobby-layout .moonlight-ribbon .stamina-bottle{width:14px}.economy-home .lobby-layout .moonlight-ribbon .wallet-row b,.economy-home .lobby-layout .moonlight-ribbon .stamina-value{font-size:9px}}
+/* Free play keeps the title in place and gives the two currencies readable room. */
+.economy-home .lobby-layout .free-play-ribbon{grid-template-columns:minmax(56px,1fr) minmax(52px,1fr) 44px}
+.economy-home .lobby-layout .free-play-ribbon .wallet-row b{font-size:12px;letter-spacing:0}
+.economy-home .lobby-layout .free-play-ribbon .wallet-row .prop-art{width:23px;height:27px}
+@media(max-width:350px){.economy-home .lobby-layout .free-play-ribbon{grid-template-columns:minmax(50px,1fr) minmax(48px,1fr) 40px}.economy-home .lobby-layout .free-play-ribbon .wallet-row b{font-size:11px}.economy-home .lobby-layout .free-play-ribbon .wallet-row .prop-art{width:19px;height:24px}}

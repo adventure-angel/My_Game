@@ -1,0 +1,58 @@
+{
+  "game": "star-candy",
+  "title": "星糖物语",
+  "build": "v47-mirror-ads",
+  "support": {
+    "email": "1416303829@qq.com"
+  },
+  "channel": "taptap-h5-rewarded-ad-integration",
+  "futureChannel": "taptap-h5-pending-account-verification",
+  "payments": false,
+  "ads": true,
+  "cloudSave": false,
+  "analyticsUpload": false,
+  "localDiagnosticsDefault": false,
+  "currency": {
+    "coinsToDiamonds": false,
+    "diamonds10ToCoins": 1000,
+    "firstCollectionDiamonds": 5,
+    "seventhCheckinDiamonds": 5,
+    "replayWinCoins": 30,
+    "chapterSixCoins": 60,
+    "starterDecorDiamonds": 9
+  },
+  "stamina": {
+    "enabled": false,
+    "cap": 50,
+    "cost": 0,
+    "recoverySeconds": 0
+  },
+  "monetization": "optional-rewarded-ads",
+  "adApproval": "enabled-configured-awaiting-device-playback",
+  "rewardedAdSupply": {
+    "enabled": true,
+    "implemented": true,
+    "adUnitId": "1054324",
+    "coins": 120,
+    "diamonds": 3,
+    "stamina": 0,
+    "maxPerOfferPerDay": 3,
+    "maxTotalPerDay": 6,
+    "cooldownSeconds": 0
+  },
+  "cloudSaveIntegration": {
+    "implemented": true,
+    "mode": "manual-append-only",
+    "v31UserConfirmedBackupRestore": true,
+    "v33ValidationPending": true
+  },
+  "totalLevels": 72,
+  "weeklyLeaderboard": {
+    "id": "k9fgb4p7i8ajkpn856",
+    "rulesVersion": "weekly-v1",
+    "period": "weekly",
+    "scorePolicy": "best",
+    "order": "descending",
+    "status": "configured-awaiting-device-submission"
+  }
+}

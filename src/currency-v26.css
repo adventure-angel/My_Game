@@ -1,0 +1,4 @@
+/* Approved global currency art: front-facing star coin and B moon-drop crystal. */
+.prop-art.prop-coin>i,.prop-art.prop-diamond>i{left:0;top:0;width:100%;height:100%;background-size:contain;background-position:center;background-repeat:no-repeat}
+.prop-art.prop-coin>i{background-image:var(--currency-coin)}
+.prop-art.prop-diamond>i{background-image:var(--currency-diamond)}

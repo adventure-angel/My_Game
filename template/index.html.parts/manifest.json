@@ -1,0 +1,12 @@
+{
+  "file": "index.html",
+  "bytes": 13871755,
+  "sha256": "20f45f8f7ab468d5a05f24f01e6800e57a98544f9d9b0f5212b012f0c0b82006",
+  "parts": [
+    "part-01.bin",
+    "part-02.bin",
+    "part-03.bin",
+    "part-04.bin",
+    "part-05.bin"
+  ]
+}

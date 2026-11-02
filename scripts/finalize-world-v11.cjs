@@ -1,0 +1,10 @@
+const fs=require('fs');
+fs.mkdirSync('archives/pre-v11',{recursive:true});
+for(const f of ['index.html','mobile-play.html','star-candy-play.html'])if(fs.existsSync(f)&&!fs.existsSync('archives/pre-v11/'+f))fs.copyFileSync(f,'archives/pre-v11/'+f);
+let world=fs.readFileSync('src/world-flow.js','utf8');
+world=world.replace('class="collection-art collection-','class="reward-art collection-art collection-');
+world=world.replace("(roomDraft?'is-furnishing ':'')","(roomDraft?'is-furnishing edit-'+roomDraft.slot+' ':'')");
+world=world.replace('[[[23,73],[73,56],[29,39],[75,23]],[[73,73],[28,57],[72,40],[30,23]],[[22,73],[72,57],[26,41],[76,24]]]','[[[23,68],[73,52],[29,34],[75,24]],[[73,66],[28,51],[72,38],[30,25]],[[22,68],[72,58],[26,41],[76,28]]]');
+world=world.replace("(data.home.placements.nightlight?'': '')+",'');
+fs.writeFileSync('src/world-flow.js',world);
+let app=fs.readFileSync('src/appScript.js','utf8');app=app.replace("edition.textContent='v10 · 星光小屋'","edition.textContent='v11 · 心愿与收藏'");fs.writeFileSync('src/appScript.js',app);

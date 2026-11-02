@@ -1,0 +1,75 @@
+/* v27: controls remain reachable in short mobile WebViews. */
+body[data-screen=game] .top{height:48px;padding:2px 10px}
+body[data-screen=game] .top-right{gap:4px}
+body[data-screen=game] .top-right .icon-btn{width:44px;height:44px;min-height:44px}
+body[data-screen=game] #trialExit{font:11px system-ui;min-width:74px;min-height:44px;padding:5px 9px;border:1px solid #d4b58999;border-radius:13px;background:#342840;color:#ffe4b5;touch-action:manipulation}
+body[data-screen=game] .game{gap:5px;padding:6px 8px 8px}
+body[data-screen=game] .coach:not([hidden]){display:flex;max-height:none;overflow:visible;padding:6px 8px;gap:8px;align-items:center}
+body[data-screen=game] .coach .lesson-copy{flex:1;min-width:0}
+body[data-screen=game] .coach .lesson-copy>small{display:block;color:#efd2a4;font:10px/1.4 system-ui;margin-bottom:2px}
+body[data-screen=game] .coach p{font:11px/1.5 system-ui;overflow-wrap:anywhere}
+.lesson-skip{flex:none;min-width:54px;min-height:44px;padding:4px 6px;border:1px solid #d3b68b66;border-radius:10px;background:#302339;color:#e5cfdc;font:10px system-ui;touch-action:manipulation}
+.lesson-skip:disabled{opacity:.5}
+body[data-screen=game] .element-panel{display:flex!important;min-height:14px;max-height:30px;overflow:hidden}
+body[data-screen=game] .element-panel>span{font:9px/1.4 system-ui;display:block;min-width:0}
+body[data-screen=game] .tool-row{display:flex;gap:5px;align-items:stretch;min-height:44px}
+body[data-screen=game] .tool{flex:1;min-width:0;min-height:44px;font-size:11px;padding:5px 2px;touch-action:manipulation}
+body[data-screen=game] .tool b{font-size:9px;margin-left:2px}
+body[data-screen=game] .skill-box{padding:5px 8px;min-height:54px}
+body[data-screen=game] .skill-btn{min-height:44px;min-width:58px;padding:6px 8px;touch-action:manipulation}
+body[data-screen=game] .skill-avatar{width:44px;height:44px;min-width:44px}
+body[data-screen=game] #mirrorPicker{flex:0 0 76px;min-width:0;display:flex;align-items:center;gap:3px;padding:0 3px;border:1px solid #b594b966;border-radius:10px;background:#362843;color:#f0dcc3}
+#mirrorPicker>span{width:20px;font:9px/1.2 system-ui}
+#mirrorElement{width:46px;min-height:44px;padding:2px 0;color:#ffe6bb;background:#362843;border:0;font:13px system-ui;border-radius:8px}
+.tile.lesson-target{outline:2px solid #fff1a8;outline-offset:-3px;box-shadow:inset 0 0 10px #ffe0a180;z-index:3;animation:lesson-glow 1.4s ease-in-out infinite alternate}
+.lesson-skill{outline:2px solid #ffe9a2;outline-offset:1px;animation:lesson-glow 1.4s ease-in-out infinite alternate}
+@keyframes lesson-glow{from{filter:brightness(1)}to{filter:brightness(1.28)}}
+.first-light-menu{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0 5px}
+.first-light-menu button{display:flex;align-items:center;justify-content:center;flex-direction:column;min-height:90px;gap:5px;margin:0;font:13px system-ui}
+.first-light-menu .lobby-icon{width:40px;height:40px}
+.first-light-home .lobby-left-rail .collection-art{width:48px;height:48px}
+.first-light-home .world-task .collection-art{width:48px;height:48px;flex:none}
+.first-light-home .world-task strong{font-size:15px}
+.prep-companion{display:flex;align-items:center;gap:10px;padding:10px 8px;margin:6px 0;border:1px solid #d2b49355;border-radius:13px;background:#392a4566;text-align:left}
+.prep-companion .portrait-art{width:48px!important;height:48px!important;min-width:48px;flex:none;border-radius:12px}
+.prep-companion b{font:12px/1.5 system-ui;color:#f7dcaf}
+.prep-companion p{font:11px/1.5 system-ui!important;margin:3px 0 0!important;color:#dac5dc}
+.prep-help summary{min-height:44px;box-sizing:border-box;padding:8px 0;touch-action:manipulation}
+.prep-sheet .prep-shop-link,.prep-warning .text-button{min-height:44px}
+.first-light-prep .prep-scroll{padding-top:12px}
+.first-light-prep .prep-help{margin-bottom:0}
+body .dialog[data-skin=daily]{position:relative;padding:0;overflow:hidden;display:flex;flex-direction:column;height:min(640px,calc(var(--game-vh,100dvh) - 24px));max-height:100%}
+body .dialog[data-skin=daily]>.dialog-corner-close{position:absolute;right:10px;top:10px;margin:0}
+.daily-sheet{display:flex;flex-direction:column;min-height:0;flex:1;overflow:hidden;width:100%}
+.daily-sheet .daily-heading{flex:none;padding:15px 58px 8px 16px;text-align:left}
+.daily-sheet .daily-heading>small{font-size:8px;letter-spacing:2px}
+.daily-sheet .daily-heading h2{font-size:21px!important;margin:4px 0 0!important;line-height:1.3}
+.daily-today{display:flex;align-items:center;gap:10px;flex:none;margin:0 13px 9px;padding:8px 10px;border:1px solid #ddc48e88;border-radius:14px;background:linear-gradient(110deg,#77577255,#30203a88);text-align:left}
+.daily-today-art>.prop-art{width:50px;height:58px;flex:none}
+.daily-today>div:last-child{min-width:0;flex:1;display:grid;gap:4px}
+.daily-today small{font:10px system-ui;color:#e6c696}
+.daily-today strong{font:14px/1.5 system-ui;color:#ffe8bb;overflow-wrap:anywhere}
+.daily-today span{font:10px/1.5 system-ui;color:#ddc8df}
+.daily-scroll{min-height:0;flex:1;overflow-y:auto;overscroll-behavior:contain;padding:8px 12px 18px;scrollbar-width:thin}
+.daily-sheet .daily-book{padding:10px 7px 13px}
+.daily-sheet .daily-grid{gap:8px 12px}
+.daily-sheet .daily-day{padding:7px 3px}
+.daily-sheet .daily-treasures{height:49px}
+.daily-sheet .daily-treasures .prop-art{width:49px;height:49px;flex-basis:49px}
+.daily-sheet .daily-day:last-child .daily-treasures{height:49px}
+.daily-footer{flex:none;padding:9px 14px 10px;background:#291d34;border-top:1px solid #d1b78366;box-shadow:0 -5px 15px #150e2922}
+.daily-footer>.primary{margin:0!important;width:100%;min-height:48px;padding:9px!important;font-size:15px!important}
+.daily-footer p{font:10px/1.5 system-ui!important;color:#cdb6d1!important;margin:6px 0 0!important}
+.rg-header>button{width:44px;height:44px}
+.rg-tools button,.rg-preview-link,.rg-style-choice button,.rg-celebration button,.rg-arrange-grid .rg-store{min-height:44px;touch-action:manipulation}
+.rg-tools{top:78px}
+.rg-dock>.primary,.rg-dock-buttons button{min-height:44px!important;touch-action:manipulation}
+.rg-await-light{min-width:44px;min-height:44px;filter:none!important;border-radius:16px;outline:1px solid #ffe4a4;outline-offset:3px;box-shadow:0 0 15px #edc77d44}
+.rg-await-light>.collection-art{filter:brightness(.65) saturate(.65)}
+.rg-light-hint{position:absolute;left:50%;top:100%;transform:translateX(-50%);padding:3px 7px;border:1px solid #e1c48e;border-radius:9px;background:#37273de8;color:#ffe7ae;font:10px/1.4 system-ui;white-space:nowrap}
+.first-light-dock .rg-prize .collection-art{width:100%;height:100%}
+.first-light-dock .rg-wish>div{display:grid;gap:3px}
+@media(max-height:650px){body[data-screen=game] .game{gap:3px;padding:3px 7px 5px}body[data-screen=game] .level-head{display:none}body[data-screen=game] .coach:not([hidden]){padding:4px 6px}body[data-screen=game] .metric{padding:4px 7px}.rg-tools{top:70px}}
+@media(max-height:500px){.daily-sheet .daily-heading{padding-top:11px;padding-bottom:5px}.daily-sheet .daily-heading>small{display:none}.daily-today{padding:4px 8px;margin-bottom:4px}.daily-today-art>.prop-art{width:38px;height:42px}.daily-today span{display:none}.daily-footer{padding:6px 12px}.daily-footer p{margin-top:3px!important}}
+.reduced .lesson-target,.reduced .lesson-skill{animation:none!important}
+@media(prefers-reduced-motion:reduce){.lesson-target,.lesson-skill{animation:none!important}}

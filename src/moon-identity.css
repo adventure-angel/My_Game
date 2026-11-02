@@ -1,0 +1,3 @@
+/* Moon's cover is the canonical identity, reused directly rather than redrawn. */
+.portrait-art.portrait-0{background-image:var(--moon-master)!important;background-size:260% auto!important;background-position:50% 24%!important}
+.art-character-0 .art-partner-scene{background-image:var(--moon-master);background-position:center 32%;bottom:14%}

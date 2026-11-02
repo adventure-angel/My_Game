@@ -1,0 +1,287 @@
+{
+  "build": "v30",
+  "generatedAt": "2026-10-30T15:00:08.518Z",
+  "scope": "Embedded bitmap assets and the two embedded music tracks; original sources located by SHA-256, not filenames alone.",
+  "font": "System font stacks; no remote font download in this artifact.",
+  "notes": [
+    "校验一致仅证明文件对应，不证明商用授权。",
+    "图片包含生成、裁切、压缩与项目内绘制素材，需按各来源补授权依据。",
+    "Stable Audio 音乐已生成并选用，但生成时套餐和商用凭证尚未查验。",
+    "四格漫画生成经过参照封面人物，生成过程见 docs/prologue-art-prompt-v29.md。",
+    "用户认可素材外观不等于已取得平台发行所需版权证明。"
+  ],
+  "assets": [
+    {
+      "mime": "image/jpeg",
+      "bytes": 28185,
+      "sha256": "d60e4b75d9c9a95c87e90f53e56c25605e638759e7dffe3ab64c86699a5efcab",
+      "localFiles": [
+        "assets/worlds-v2-mobile.jpg"
+      ],
+      "evidenceStatus": "commercial-rights-not-verified"
+    },
+    {
+      "mime": "image/webp",
+      "bytes": 39434,
+      "sha256": "26f842064477b90cd128ff5700e9a306c9710316c1981746506e9a6fb3f85b9f",
+      "localFiles": [
+        "assets/partner-face-1-v10.webp"
+      ],
+      "evidenceStatus": "commercial-rights-not-verified"
+    },
+    {
+      "mime": "image/webp",
+      "bytes": 41142,
+      "sha256": "06bea750c9baa0b88c7f882d5804f484381c8cfb53b9cd03a9428c00a6dfc46f",
+      "localFiles": [
+        "assets/partner-face-2-v10.webp"
+      ],
+      "evidenceStatus": "commercial-rights-not-verified"
+    },
+    {
+      "mime": "image/webp",
+      "bytes": 38758,
+      "sha256": "c8e4304701d639a9ca4b2e844d509915816b3a47313e481f87a234bfe5638dad",
+      "localFiles": [
+        "assets/partner-face-3-v10.webp"
+      ],
+      "evidenceStatus": "commercial-rights-not-verified"
+    },
+    {
+      "mime": "image/webp",
+      "bytes": 36532,
+      "sha256": "8252bde4e3ca0c7928777761d8c847385d4651d1c48aa6a2e9993ad739a6ec2a",
+      "localFiles": [
+        "assets/partner-face-4-v10.webp"
+      ],
+      "evidenceStatus": "commercial-rights-not-verified"
+    },
+    {
+      "mime": "image/webp",
+      "bytes": 703864,
+      "sha256": "61e37aa030d5bcd3c6bf9557f41c9d29cdd0f78098781cb90ad5baf137dd5d06",
+      "localFiles": [
+        "assets/rewards-v16.webp"
+      ],
+      "evidenceStatus": "commercial-rights-not-verified"
+    },
+    {
+      "mime": "image/webp",
+      "bytes": 567046,
+      "sha256": "4a00da36de3fefe13588e04594597d6570f05df640e0f11c5c1d74356196345e",
+      "localFiles": [
+        "assets/prologue-comic-v29.webp"
+      ],
+      "evidenceStatus": "commercial-rights-not-verified"
+    },
+    {
+      "mime": "image/webp",
+      "bytes": 195994,
+      "sha256": "ca47e74babb50fe0a2e0f3aafeb1120a466b0fbd426b6941bd2a4e5db72cf7bc",
+      "localFiles": [
+        "assets/currency-coin-v26.webp"
+      ],
+      "evidenceStatus": "commercial-rights-not-verified"
+    },
+    {
+      "mime": "image/webp",
+      "bytes": 116926,
+      "sha256": "a38e6de510c7aa3f2143f08fde7adab08e0a5ab3c43d6c930a4b6ae7e89cb70f",
+      "localFiles": [
+        "assets/currency-diamond-b-v26.webp"
+      ],
+      "evidenceStatus": "commercial-rights-not-verified"
+    },
+    {
+      "mime": "image/webp",
+      "bytes": 366816,
+      "sha256": "d7905325f726c900c6fd03133b743109557d822f29438abfb123d8d7e679e84d",
+      "localFiles": [
+        "assets/room-base-v25.webp"
+      ],
+      "evidenceStatus": "commercial-rights-not-verified"
+    },
+    {
+      "mime": "image/webp",
+      "bytes": 674084,
+      "sha256": "2f2d6cc4299a9015ad7e340ef6002296508a23521d2589cb18b6ad0e80802a50",
+      "localFiles": [
+        "assets/room-soft-v25.webp"
+      ],
+      "evidenceStatus": "commercial-rights-not-verified"
+    },
+    {
+      "mime": "image/webp",
+      "bytes": 541364,
+      "sha256": "88fe4096b3f8459a2579dffcdd59b77eab0cec19856a3c163b6494c1e7b6c2a8",
+      "localFiles": [
+        "assets/economy-props-v15.webp"
+      ],
+      "evidenceStatus": "commercial-rights-not-verified"
+    },
+    {
+      "mime": "image/webp",
+      "bytes": 558118,
+      "sha256": "e66d06df0bd3fb162451d812a6e6df1dd4745ccb790068f6f3926c9e866328a5",
+      "localFiles": [
+        "assets/moon-master-v16.webp"
+      ],
+      "evidenceStatus": "commercial-rights-not-verified"
+    },
+    {
+      "mime": "image/webp",
+      "bytes": 494976,
+      "sha256": "72ef6d69ad16d213210bb590f40fd21b709efb471370f02c497970182b617b62",
+      "localFiles": [
+        "assets/world-lobby-v16.webp"
+      ],
+      "evidenceStatus": "commercial-rights-not-verified"
+    },
+    {
+      "mime": "image/webp",
+      "bytes": 356910,
+      "sha256": "79295598e33c1010ba9c11888fc759803f20322be99266566a8aa2c280560913",
+      "localFiles": [
+        "assets/world-room-v11.webp"
+      ],
+      "evidenceStatus": "commercial-rights-not-verified"
+    },
+    {
+      "mime": "image/webp",
+      "bytes": 457998,
+      "sha256": "eccf629fbf15ddefc56fd1d166bf0768641b9259dbef54f426c1441c36821190",
+      "localFiles": [
+        "assets/world-cloud-v11.webp"
+      ],
+      "evidenceStatus": "commercial-rights-not-verified"
+    },
+    {
+      "mime": "image/webp",
+      "bytes": 526538,
+      "sha256": "a7a161f24c05dbf8cf667cad9594f1047169c836b69b7e78af010bd3e2e27653",
+      "localFiles": [
+        "assets/world-forest-v11.webp"
+      ],
+      "evidenceStatus": "commercial-rights-not-verified"
+    },
+    {
+      "mime": "image/webp",
+      "bytes": 494534,
+      "sha256": "06fe05ab73c5699d3b672df2b8bf75a1938c962ff767b682ff1b510dfc96637f",
+      "localFiles": [
+        "assets/world-sea-v11.webp"
+      ],
+      "evidenceStatus": "commercial-rights-not-verified"
+    },
+    {
+      "mime": "image/webp",
+      "bytes": 759614,
+      "sha256": "cd0a7e86e3be7036f21efc46a794b95a4cd54d856ed295ebd54548600593687e",
+      "localFiles": [
+        "assets/world-extras-v11.webp"
+      ],
+      "evidenceStatus": "commercial-rights-not-verified"
+    },
+    {
+      "mime": "image/webp",
+      "bytes": 340234,
+      "sha256": "d15306ada43099d407d67803e4430384b1059823b4813623e10c7bed602c9960",
+      "localFiles": [
+        "assets/partner-scene-1-v10.webp"
+      ],
+      "evidenceStatus": "commercial-rights-not-verified"
+    },
+    {
+      "mime": "image/webp",
+      "bytes": 330568,
+      "sha256": "8a301d82a1d4f91290625345088e7b6004c675c80ce44ed92388e02cbb379d40",
+      "localFiles": [
+        "assets/partner-scene-2-v10.webp"
+      ],
+      "evidenceStatus": "commercial-rights-not-verified"
+    },
+    {
+      "mime": "image/webp",
+      "bytes": 337668,
+      "sha256": "04df554ed0d51cb15f92f5c3d3cda15eb53d5e5ce34d1e1175ebaba4222f88d4",
+      "localFiles": [
+        "assets/partner-scene-3-v10.webp"
+      ],
+      "evidenceStatus": "commercial-rights-not-verified"
+    },
+    {
+      "mime": "image/webp",
+      "bytes": 324040,
+      "sha256": "8c11c1bc7470e8e61881b3ab5b344bc1b784aa09df5a1ac5f008193fa0a3d140",
+      "localFiles": [
+        "assets/partner-scene-4-v10.webp"
+      ],
+      "evidenceStatus": "commercial-rights-not-verified"
+    },
+    {
+      "mime": "image/webp",
+      "bytes": 4338,
+      "sha256": "219f5a27257723d84a5c229988b33fd816a6078689b2f991e4f492a57d45a9fb",
+      "localFiles": [
+        "assets/nav-0-v10.webp"
+      ],
+      "evidenceStatus": "commercial-rights-not-verified"
+    },
+    {
+      "mime": "image/webp",
+      "bytes": 3394,
+      "sha256": "0dd4b7145d668c28aa2f9c02deb218149acf9b9c2c79cba29ce67bb5fa4cafb7",
+      "localFiles": [
+        "assets/nav-1-v10.webp"
+      ],
+      "evidenceStatus": "commercial-rights-not-verified"
+    },
+    {
+      "mime": "image/webp",
+      "bytes": 3184,
+      "sha256": "52e6f6ea394d57176676fc9c1b05f89162753257a59650dc412bbade75ac9abb",
+      "localFiles": [
+        "assets/nav-2-v10.webp"
+      ],
+      "evidenceStatus": "commercial-rights-not-verified"
+    },
+    {
+      "mime": "image/webp",
+      "bytes": 5364,
+      "sha256": "199d1a4aa27db66b59cc9249d5ae76b99d23fa539128835dd4a2f6a7b0042d62",
+      "localFiles": [
+        "assets/nav-3-v10.webp"
+      ],
+      "evidenceStatus": "commercial-rights-not-verified"
+    },
+    {
+      "mime": "image/jpeg",
+      "bytes": 446526,
+      "sha256": "8b0d74acde04eb235a687852415fe19e3ef7d06e74d6ccd0c655b1637e86f3cf",
+      "localFiles": [
+        "assets/cover-v2.jpg"
+      ],
+      "evidenceStatus": "commercial-rights-not-verified"
+    },
+    {
+      "mime": "audio/mpeg",
+      "bytes": 288749,
+      "sha256": "df8b6ede6dd47a6515fc498a095a1265c092ed9c0a35b4c1ccb36d0c623c0343",
+      "localFiles": [
+        "assets/music-ai/menu-b-loop.mp3"
+      ],
+      "generationSource": "Stable Audio SA3; docs/music-selection.md and assets/music-ai/manifest.json",
+      "evidenceStatus": "generation-time-plan-and-commercial-license-evidence-required"
+    },
+    {
+      "mime": "audio/mpeg",
+      "bytes": 308497,
+      "sha256": "56c3daa8f46890ad0a8f0ecf151c5d8b1a49a0b7f048cff567d57001d86fd697",
+      "localFiles": [
+        "assets/music-ai/game-a-loop.mp3"
+      ],
+      "generationSource": "Stable Audio SA3; docs/music-selection.md and assets/music-ai/manifest.json",
+      "evidenceStatus": "generation-time-plan-and-commercial-license-evidence-required"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+const fs=require('fs');
+let p='scripts/build-game.cjs',s=fs.readFileSync(p,'utf8');
+s=s.replace("const portraits=Array.from({length:5},(_,i)=>", "const portraits=Array.from({length:4},(_,n)=>{const i=n+1;return ");
+s=s.replace(".toString('base64')+'\")}').join('\\n');", ".toString('base64')+'\")}';}).join('\\n');");
+s=s.replace("'assets/rewards-v10.webp'","'assets/rewards-v16.webp'");
+s=s.replace("'scene-lobby':'scene-lobby-v10.webp'", "'scene-lobby':'world-lobby-v16.webp',\n 'moon-master':'moon-master-v16.webp'");
+s=s.replace("'world-'+name+'-v11.webp'", "'world-'+name+(name==='lobby'?'-v16.webp':'-v11.webp')");
+s=s.replace("fs.readFileSync('src/economy-art.css','utf8')", "fs.readFileSync('src/economy-art.css','utf8')+'\\n'+fs.readFileSync('src/moon-identity.css','utf8')");
+fs.writeFileSync(p,s);
+p='scripts/package-mobile.cjs';s=fs.readFileSync(p,'utf8').replace('v15 心愿珍藏','v16 月见统一形象');fs.writeFileSync(p,s);

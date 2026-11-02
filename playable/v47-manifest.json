@@ -1,0 +1,280 @@
+{
+  "build": "v47-mirror-ads",
+  "entryBytes": 7999,
+  "previewBytes": 13071177,
+  "scripts": 10,
+  "styles": 7,
+  "assets": [
+    {
+      "file": "assets/d60e4b75d9c9a95c87e90f53e56c25605e638759e7dffe3ab64c86699a5efcab.jpg",
+      "bytes": 28185,
+      "sha256": "d60e4b75d9c9a95c87e90f53e56c25605e638759e7dffe3ab64c86699a5efcab"
+    },
+    {
+      "file": "assets/26f842064477b90cd128ff5700e9a306c9710316c1981746506e9a6fb3f85b9f.webp",
+      "bytes": 39434,
+      "sha256": "26f842064477b90cd128ff5700e9a306c9710316c1981746506e9a6fb3f85b9f"
+    },
+    {
+      "file": "assets/06bea750c9baa0b88c7f882d5804f484381c8cfb53b9cd03a9428c00a6dfc46f.webp",
+      "bytes": 41142,
+      "sha256": "06bea750c9baa0b88c7f882d5804f484381c8cfb53b9cd03a9428c00a6dfc46f"
+    },
+    {
+      "file": "assets/c8e4304701d639a9ca4b2e844d509915816b3a47313e481f87a234bfe5638dad.webp",
+      "bytes": 38758,
+      "sha256": "c8e4304701d639a9ca4b2e844d509915816b3a47313e481f87a234bfe5638dad"
+    },
+    {
+      "file": "assets/8252bde4e3ca0c7928777761d8c847385d4651d1c48aa6a2e9993ad739a6ec2a.webp",
+      "bytes": 36532,
+      "sha256": "8252bde4e3ca0c7928777761d8c847385d4651d1c48aa6a2e9993ad739a6ec2a"
+    },
+    {
+      "file": "assets/61e37aa030d5bcd3c6bf9557f41c9d29cdd0f78098781cb90ad5baf137dd5d06.webp",
+      "bytes": 703864,
+      "sha256": "61e37aa030d5bcd3c6bf9557f41c9d29cdd0f78098781cb90ad5baf137dd5d06"
+    },
+    {
+      "file": "assets/4a00da36de3fefe13588e04594597d6570f05df640e0f11c5c1d74356196345e.webp",
+      "bytes": 567046,
+      "sha256": "4a00da36de3fefe13588e04594597d6570f05df640e0f11c5c1d74356196345e"
+    },
+    {
+      "file": "assets/ca47e74babb50fe0a2e0f3aafeb1120a466b0fbd426b6941bd2a4e5db72cf7bc.webp",
+      "bytes": 195994,
+      "sha256": "ca47e74babb50fe0a2e0f3aafeb1120a466b0fbd426b6941bd2a4e5db72cf7bc"
+    },
+    {
+      "file": "assets/a38e6de510c7aa3f2143f08fde7adab08e0a5ab3c43d6c930a4b6ae7e89cb70f.webp",
+      "bytes": 116926,
+      "sha256": "a38e6de510c7aa3f2143f08fde7adab08e0a5ab3c43d6c930a4b6ae7e89cb70f"
+    },
+    {
+      "file": "assets/d7905325f726c900c6fd03133b743109557d822f29438abfb123d8d7e679e84d.webp",
+      "bytes": 366816,
+      "sha256": "d7905325f726c900c6fd03133b743109557d822f29438abfb123d8d7e679e84d"
+    },
+    {
+      "file": "assets/2f2d6cc4299a9015ad7e340ef6002296508a23521d2589cb18b6ad0e80802a50.webp",
+      "bytes": 674084,
+      "sha256": "2f2d6cc4299a9015ad7e340ef6002296508a23521d2589cb18b6ad0e80802a50"
+    },
+    {
+      "file": "assets/88fe4096b3f8459a2579dffcdd59b77eab0cec19856a3c163b6494c1e7b6c2a8.webp",
+      "bytes": 541364,
+      "sha256": "88fe4096b3f8459a2579dffcdd59b77eab0cec19856a3c163b6494c1e7b6c2a8"
+    },
+    {
+      "file": "assets/e66d06df0bd3fb162451d812a6e6df1dd4745ccb790068f6f3926c9e866328a5.webp",
+      "bytes": 558118,
+      "sha256": "e66d06df0bd3fb162451d812a6e6df1dd4745ccb790068f6f3926c9e866328a5"
+    },
+    {
+      "file": "assets/72ef6d69ad16d213210bb590f40fd21b709efb471370f02c497970182b617b62.webp",
+      "bytes": 494976,
+      "sha256": "72ef6d69ad16d213210bb590f40fd21b709efb471370f02c497970182b617b62"
+    },
+    {
+      "file": "assets/79295598e33c1010ba9c11888fc759803f20322be99266566a8aa2c280560913.webp",
+      "bytes": 356910,
+      "sha256": "79295598e33c1010ba9c11888fc759803f20322be99266566a8aa2c280560913"
+    },
+    {
+      "file": "assets/eccf629fbf15ddefc56fd1d166bf0768641b9259dbef54f426c1441c36821190.webp",
+      "bytes": 457998,
+      "sha256": "eccf629fbf15ddefc56fd1d166bf0768641b9259dbef54f426c1441c36821190"
+    },
+    {
+      "file": "assets/a7a161f24c05dbf8cf667cad9594f1047169c836b69b7e78af010bd3e2e27653.webp",
+      "bytes": 526538,
+      "sha256": "a7a161f24c05dbf8cf667cad9594f1047169c836b69b7e78af010bd3e2e27653"
+    },
+    {
+      "file": "assets/06fe05ab73c5699d3b672df2b8bf75a1938c962ff767b682ff1b510dfc96637f.webp",
+      "bytes": 494534,
+      "sha256": "06fe05ab73c5699d3b672df2b8bf75a1938c962ff767b682ff1b510dfc96637f"
+    },
+    {
+      "file": "assets/cd0a7e86e3be7036f21efc46a794b95a4cd54d856ed295ebd54548600593687e.webp",
+      "bytes": 759614,
+      "sha256": "cd0a7e86e3be7036f21efc46a794b95a4cd54d856ed295ebd54548600593687e"
+    },
+    {
+      "file": "assets/d15306ada43099d407d67803e4430384b1059823b4813623e10c7bed602c9960.webp",
+      "bytes": 340234,
+      "sha256": "d15306ada43099d407d67803e4430384b1059823b4813623e10c7bed602c9960"
+    },
+    {
+      "file": "assets/8a301d82a1d4f91290625345088e7b6004c675c80ce44ed92388e02cbb379d40.webp",
+      "bytes": 330568,
+      "sha256": "8a301d82a1d4f91290625345088e7b6004c675c80ce44ed92388e02cbb379d40"
+    },
+    {
+      "file": "assets/04df554ed0d51cb15f92f5c3d3cda15eb53d5e5ce34d1e1175ebaba4222f88d4.webp",
+      "bytes": 337668,
+      "sha256": "04df554ed0d51cb15f92f5c3d3cda15eb53d5e5ce34d1e1175ebaba4222f88d4"
+    },
+    {
+      "file": "assets/8c11c1bc7470e8e61881b3ab5b344bc1b784aa09df5a1ac5f008193fa0a3d140.webp",
+      "bytes": 324040,
+      "sha256": "8c11c1bc7470e8e61881b3ab5b344bc1b784aa09df5a1ac5f008193fa0a3d140"
+    },
+    {
+      "file": "assets/219f5a27257723d84a5c229988b33fd816a6078689b2f991e4f492a57d45a9fb.webp",
+      "bytes": 4338,
+      "sha256": "219f5a27257723d84a5c229988b33fd816a6078689b2f991e4f492a57d45a9fb"
+    },
+    {
+      "file": "assets/0dd4b7145d668c28aa2f9c02deb218149acf9b9c2c79cba29ce67bb5fa4cafb7.webp",
+      "bytes": 3394,
+      "sha256": "0dd4b7145d668c28aa2f9c02deb218149acf9b9c2c79cba29ce67bb5fa4cafb7"
+    },
+    {
+      "file": "assets/52e6f6ea394d57176676fc9c1b05f89162753257a59650dc412bbade75ac9abb.webp",
+      "bytes": 3184,
+      "sha256": "52e6f6ea394d57176676fc9c1b05f89162753257a59650dc412bbade75ac9abb"
+    },
+    {
+      "file": "assets/199d1a4aa27db66b59cc9249d5ae76b99d23fa539128835dd4a2f6a7b0042d62.webp",
+      "bytes": 5364,
+      "sha256": "199d1a4aa27db66b59cc9249d5ae76b99d23fa539128835dd4a2f6a7b0042d62"
+    },
+    {
+      "file": "assets/8b0d74acde04eb235a687852415fe19e3ef7d06e74d6ccd0c655b1637e86f3cf.jpg",
+      "bytes": 446526,
+      "sha256": "8b0d74acde04eb235a687852415fe19e3ef7d06e74d6ccd0c655b1637e86f3cf"
+    }
+  ],
+  "config": {
+    "game": "star-candy",
+    "title": "星糖物语",
+    "build": "v47-mirror-ads",
+    "support": {
+      "email": "1416303829@qq.com"
+    },
+    "channel": "taptap-h5-rewarded-ad-integration",
+    "futureChannel": "taptap-h5-pending-account-verification",
+    "payments": false,
+    "ads": true,
+    "cloudSave": false,
+    "analyticsUpload": false,
+    "localDiagnosticsDefault": false,
+    "currency": {
+      "coinsToDiamonds": false,
+      "diamonds10ToCoins": 1000,
+      "firstCollectionDiamonds": 5,
+      "seventhCheckinDiamonds": 5,
+      "replayWinCoins": 30,
+      "chapterSixCoins": 60,
+      "starterDecorDiamonds": 9
+    },
+    "stamina": {
+      "enabled": false,
+      "cap": 50,
+      "cost": 0,
+      "recoverySeconds": 0
+    },
+    "monetization": "optional-rewarded-ads",
+    "adApproval": "enabled-configured-awaiting-device-playback",
+    "rewardedAdSupply": {
+      "enabled": true,
+      "implemented": true,
+      "adUnitId": "1054324",
+      "coins": 120,
+      "diamonds": 3,
+      "stamina": 0,
+      "maxPerOfferPerDay": 3,
+      "maxTotalPerDay": 6,
+      "cooldownSeconds": 0
+    },
+    "cloudSaveIntegration": {
+      "implemented": true,
+      "mode": "manual-append-only",
+      "v31UserConfirmedBackupRestore": true,
+      "v33ValidationPending": true
+    },
+    "totalLevels": 72,
+    "weeklyLeaderboard": {
+      "id": "k9fgb4p7i8ajkpn856",
+      "rulesVersion": "weekly-v1",
+      "period": "weekly",
+      "scorePolicy": "best",
+      "order": "descending",
+      "status": "configured-awaiting-device-submission"
+    }
+  },
+  "phoneValidated": false,
+  "adPlaybackValidated": false,
+  "sourceSha256": "f43e228f40d4bd56922e779b8294291aec8e9c903df7b623b14f2ed43b36d370",
+  "files": [
+    {
+      "file": "runtime-1.4580dcb190ed.js",
+      "sha256": "4580dcb190ededa76132b7142fb402273fa4a06d8fe127cc9dba915d7f7522dd"
+    },
+    {
+      "file": "runtime-10.375743052d24.js",
+      "sha256": "375743052d24701c86b3a72934d7009212cde7163aa87a22cf078c850f964b06"
+    },
+    {
+      "file": "runtime-2.cccef4a1bdf2.js",
+      "sha256": "cccef4a1bdf2ab50fcc204a15fc7bafcb04f24c303d1450c3f3902374a9f6b97"
+    },
+    {
+      "file": "runtime-3.b1b28f5d6936.js",
+      "sha256": "b1b28f5d69367b81ee6bf9396549d2c8a5654a1c73a0b6e443fa28061b5eae47"
+    },
+    {
+      "file": "runtime-4.c500c079641c.js",
+      "sha256": "c500c079641c593fb1a26d5e2636f2a20193752f399599d96d0c71e32544b1a9"
+    },
+    {
+      "file": "runtime-5.5d6718bca363.js",
+      "sha256": "5d6718bca363d15a892dc53db991a0feeafb66a08ac6864c2c482b2316131e3b"
+    },
+    {
+      "file": "runtime-6.cb416242d3e8.js",
+      "sha256": "cb416242d3e8ed82c774701cc91361e995f432b0b457f7ee4bcf95ecc2db1e7d"
+    },
+    {
+      "file": "runtime-7.1c63ad93d0eb.js",
+      "sha256": "1c63ad93d0eb134cbb2b7f9908b10ea9af66411bfc101d3d9f88ecd4f3df7a68"
+    },
+    {
+      "file": "runtime-8.0525d5e6f935.js",
+      "sha256": "0525d5e6f935ceab488a06b58218b48ed234f1e1451a4c603d507b847ed7cb9f"
+    },
+    {
+      "file": "runtime-9.851ebe07718a.js",
+      "sha256": "851ebe07718a4ac104b0bc68fa2a1e43092e974e79122bb742be3221d91b2ba9"
+    },
+    {
+      "file": "style-1.3c450c81cb9e.css",
+      "sha256": "3c450c81cb9eb4f73f42205adc3987c8f2f38171ada004abd69aedfd6cbb8e44"
+    },
+    {
+      "file": "style-2.c7627f3be3a5.css",
+      "sha256": "c7627f3be3a5bfaee51eeaefaf5eb791c7a5e40eb87d1879491579a73c47a865"
+    },
+    {
+      "file": "style-3.c7627f3be3a5.css",
+      "sha256": "c7627f3be3a5bfaee51eeaefaf5eb791c7a5e40eb87d1879491579a73c47a865"
+    },
+    {
+      "file": "style-4.c7627f3be3a5.css",
+      "sha256": "c7627f3be3a5bfaee51eeaefaf5eb791c7a5e40eb87d1879491579a73c47a865"
+    },
+    {
+      "file": "style-5.1f0511238928.css",
+      "sha256": "1f0511238928d917776e8e48e80d93f01568ed8e4de82451db2068f6419def69"
+    },
+    {
+      "file": "style-6.e9d29ac4ab6b.css",
+      "sha256": "e9d29ac4ab6b6d2d0a66e3c3239ebb647dab861c09ce4bd37c2d5fe3c8146797"
+    },
+    {
+      "file": "style-7.6dd449fc1741.css",
+      "sha256": "6dd449fc17416d740a2ef53dd981ca422252369193dd59e70327a605bc704575"
+    }
+  ]
+}

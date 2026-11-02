@@ -1,0 +1,26 @@
+/* Use available WebView space, including dynamic browser chrome changes. */
+body .app{height:var(--game-vh,100dvh)}
+body .cover-stage{height:100%;max-height:100%}
+body .veil{box-sizing:border-box;height:var(--game-vh,100dvh);top:var(--game-vtop,0px);bottom:auto;padding:max(8px,env(safe-area-inset-top)) max(8px,env(safe-area-inset-right)) max(8px,env(safe-area-inset-bottom)) max(8px,env(safe-area-inset-left));overflow:hidden}
+body .dialog{box-sizing:border-box;max-height:100%;min-height:0;overscroll-behavior:contain}
+body .dialog[data-skin=preparation]{padding:0;overflow:hidden;max-width:440px;display:flex;flex-direction:column;height:min(600px,calc(var(--game-vh,100dvh) - 24px));border-radius:22px}
+.prep-sheet{display:flex;flex-direction:column;min-height:0;flex:1;width:100%;overflow:hidden}
+.prep-header{flex:none;min-height:66px;box-sizing:border-box;padding:12px 14px;display:flex;align-items:center;justify-content:space-between;text-align:left;background:linear-gradient(100deg,#251a36ee,#49354a88),var(--world-cloud) center 48%/cover;border-bottom:1px solid #d7bd8633}
+.prep-header small{font:11px system-ui;color:#ecd19f}.prep-header h2{font-size:19px!important;margin:4px 0 0!important;line-height:1.3}.prep-header button{flex:none;width:44px;height:44px;padding:0;font-size:26px}
+.prep-header:is(.place-4,.place-5,.place-6,.place-7){background-image:linear-gradient(100deg,#251a36ee,#49354a88),var(--world-forest)}
+.prep-header:is(.place-8,.place-9,.place-10,.place-11){background-image:linear-gradient(100deg,#251a36ee,#49354a88),var(--world-sea)}
+.prep-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:10px 14px 4px;scrollbar-width:thin}
+.prep-sheet .prep-goals{gap:6px;margin:0 0 8px}.prep-sheet .prep-goals>div{display:flex;align-items:center;justify-content:center;gap:6px;padding:8px 4px;border-radius:12px;min-width:0}.prep-sheet .prep-goals span,.prep-sheet .prep-goals svg{width:21px;height:23px;font-size:21px}.prep-sheet .prep-goals strong{font-size:16px;white-space:nowrap}.prep-sheet .prep-goals small{font-size:10px}
+.prep-sheet .stage-progress{margin:0 0 8px;padding:5px 8px;gap:8px;justify-content:flex-start}.prep-sheet .stage-progress>span{width:40px}.prep-sheet .stage-progress b{font-size:12px}.prep-sheet .stage-progress small{font-size:10px}.prep-sheet .stage-dots{gap:5px;margin-top:3px}.prep-sheet .stage-dots i{width:16px;height:16px;font-size:9px}
+.prep-sheet .prep-label{font-size:12px;margin:8px 0 6px}.prep-sheet .prep-label small{font-size:10px;margin-left:6px}
+.prep-sheet .prep-partners{display:flex!important;gap:7px;overflow-x:auto;overflow-y:hidden;padding:2px 1px 4px;min-height:70px}
+.prep-sheet .prep-partners button{box-sizing:border-box;flex:0 0 58px;width:58px;min-width:58px;height:70px;min-height:0;padding:2px 2px 3px;display:flex;flex-direction:column;align-items:center;gap:2px;border-radius:12px}
+.prep-sheet .prep-partners .portrait-art{display:block;width:46px!important;height:46px!important;min-height:0!important;max-height:46px!important;aspect-ratio:1;flex:none;border-radius:8px}
+.prep-sheet .prep-partners button>span:last-child{font:11px/15px system-ui}
+.prep-help{text-align:left;margin:4px 0 8px;border-bottom:1px solid #dbcba526;padding:0 0 5px}.prep-help summary{font:11px/1.5 system-ui;color:#edc88d;cursor:pointer;min-height:28px;display:list-item;align-content:center}.prep-help p{font:11px/1.65 system-ui!important;margin:5px 0!important;color:#dbcde4}
+.prep-sheet .prep-tools{gap:7px}.prep-sheet .prep-tools button{padding:7px 4px;min-height:44px;font-size:12px}.prep-sheet .prep-tools small{font-size:10px;margin-top:2px}.prep-sheet .prep-shop-link{display:block;padding:7px!important;min-height:32px;width:100%}
+.prep-footer{flex:none;padding:8px 14px 12px;background:#281d36;border-top:1px solid #cbb08a44;box-shadow:0 -6px 18px #160e251c}
+.prep-sheet .stamina-prep{width:100%;margin:0 0 7px;padding:5px 9px}.prep-sheet .prep-start{margin:0!important;min-height:44px;padding:10px!important;font-size:15px!important;width:100%}
+.prep-sheet .prep-warning{margin:5px 0!important}
+@media(max-height:600px){.prep-header{min-height:55px;padding:6px 12px}.prep-header h2{font-size:17px!important}.prep-scroll{padding-top:6px}.prep-footer{padding:6px 12px 8px}.prep-sheet .prep-partners{min-height:60px}.prep-sheet .prep-partners button{height:60px;flex-basis:50px;min-width:50px;width:50px}.prep-sheet .prep-partners .portrait-art{width:37px!important;height:37px!important;max-height:37px!important}.prep-sheet .stage-progress{margin-bottom:4px}.prep-sheet .stage-progress>span{width:32px}.prep-sheet .prep-label{margin-top:5px}}
+@media(max-width:350px){.prep-header h2{font-size:17px!important}.prep-scroll{padding-left:10px;padding-right:10px}.prep-sheet .prep-goals>div{gap:3px}.prep-sheet .prep-goals strong{font-size:14px}.prep-sheet .prep-goals small{font-size:9px}.prep-sheet .stage-progress small{font-size:9px}}

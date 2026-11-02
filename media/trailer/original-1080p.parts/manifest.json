@@ -1,0 +1,11 @@
+{
+  "file": "star-candy-trailer-final-1080p.mp4",
+  "bytes": 11434600,
+  "sha256": "d4e20324372a76eb5a4c16dee6bf5ac5a93d457b561bd8cbebe4abe76cd435e1",
+  "parts": [
+    "part-01.bin",
+    "part-02.bin",
+    "part-03.bin",
+    "part-04.bin"
+  ]
+}

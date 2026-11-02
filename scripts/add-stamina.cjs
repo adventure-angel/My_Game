@@ -1,0 +1,12 @@
+const fs=require('fs');
+let s=fs.readFileSync('scripts/build-game.cjs','utf8');
+s=s.replace("fs.readFileSync('src/commerce.js','utf8')","fs.readFileSync('src/stamina.js','utf8')+'\\n'+fs.readFileSync('src/commerce.js','utf8')");
+fs.writeFileSync('scripts/build-game.cjs',s);
+s=fs.readFileSync('src/economy-flow.js','utf8');
+const old="</h1></header>'+walletView()+'<button class=\"lobby-medallion lobby-settings\"";
+if(!s.includes(old))throw Error('Lobby wallet marker missing');
+s=s.replace(old,"</h1></header>'+walletView()+staminaView()+'<button class=\"lobby-medallion lobby-settings\"");
+fs.writeFileSync('src/economy-flow.js',s);
+s=fs.readFileSync('src/game-flow.js','utf8');
+s=s.replace("'<button class=\"primary prep-start\" data-action=\"confirmStart\">开始挑战 ▶</button>'","staminaView(true)+'<button class=\"primary prep-start\" data-action=\"confirmStart\">开始挑战 · 消耗 5 体力 ▶</button>'");
+fs.writeFileSync('src/game-flow.js',s);

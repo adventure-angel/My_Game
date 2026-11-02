@@ -1,0 +1,24 @@
+/* Reuse the existing room toolbar and speech area on small screens. */
+.rg-tools .daily-note-new{border-color:#f2d699;color:#fff0c8}.daily-note-new:after{content:' · 新';font-size:9px;color:#f8d48c}
+.room-note{padding:18px 16px 14px;border:1px solid #d8b985;border-radius:16px;background:linear-gradient(135deg,#f9edce,#e9d8b8);color:#553d5a;text-align:left;box-shadow:inset 0 0 0 5px #fff6dd55}
+.room-note>small{font:11px/1.6 system-ui;color:#856c80}.room-note h2{font:25px/1.5 Georgia,'Songti SC',serif!important;color:#66466c!important;margin:14px 0!important}.room-note>p{font:16px/2 Georgia,'Songti SC',serif!important;color:#624d63!important;margin:8px 0 20px!important}.room-note-sign{display:block;text-align:right;color:#8b658d;font-size:17px}
+.room-note-history{margin-top:15px;text-align:left}.room-note-history summary{padding:12px 0;cursor:pointer;font-size:13px}.room-note-history article{padding:12px;border-top:1px solid #d5b69155}.room-note-history small,.room-note-history b{display:block;margin-bottom:5px}.room-note-history p{font-size:13px!important;line-height:1.8!important}
+.forest-wish-card{display:flex;align-items:center;gap:10px;width:100%;margin:10px 0;padding:10px;border:1px solid #d8bb8799;border-radius:16px;background:linear-gradient(110deg,#3b364c,#343e3b);color:#ffe8ba;text-align:left}.forest-wish-card>.collection-art{width:52px;height:52px;flex:none}.forest-wish-card>span{flex:1;min-width:0}.forest-wish-card small,.forest-wish-card b,.forest-wish-card span>span{display:block}.forest-wish-card small{font:10px/1.6 system-ui;color:#d5c3d9}.forest-wish-card b{font:14px/1.7 Georgia,'Songti SC',serif}.forest-wish-card span>span{font:11px/1.6 system-ui;color:#ecd8ae}.forest-wish-card i{font:25px Georgia}
+.forest-letter>.collection-art{width:100px;height:100px;margin:8px auto}.forest-letter p{text-align:left;font-size:14px;line-height:1.9}.forest-wish-effect{padding:10px;border:1px solid #d7bc8b66;border-radius:12px}.rg-wish .forest-wish-link{display:block;padding:3px 0;color:#f0d397;background:none;border:0;font:10px/1.4 system-ui;text-align:left;min-height:27px}
+.wish-chime{position:absolute;left:53%;top:19%;width:11%;min-width:32px;min-height:54px;padding:22px 0 0;background:none;border:0;pointer-events:auto;cursor:pointer;transform-origin:50% 0;filter:drop-shadow(0 2px 4px #291632aa);z-index:4}.wish-chime:before{content:'';position:absolute;top:0;left:50%;width:1px;height:28px;background:#f5d899}.wish-chime>.lobby-icon{width:100%;height:auto;display:block}.wish-chime:after{content:'✧';position:absolute;left:40%;top:95%;color:#ffeab9;font-size:14px}.chime-playing{animation:chime-swing 1.5s ease-out}
+.rg-cat-react .rg-cat-hotspot:after{content:'呼噜…';position:absolute;top:-18px;left:15%;font:12px/1.4 Georgia;color:#ffe8be;text-shadow:0 1px 4px #281633;animation:rg-note 2.3s ease-out both;pointer-events:none}
+.room-decor .wish-chime:focus-visible{outline:2px solid #ffe7ae;border-radius:12px}
+@keyframes chime-swing{0%,100%{transform:rotate(0)}20%{transform:rotate(12deg)}45%{transform:rotate(-9deg)}70%{transform:rotate(5deg)}}
+@media(max-height:620px){.rg-wish .forest-wish-link{font-size:9px;min-height:22px}.room-note{padding:12px}.room-note>p{font-size:14px!important;line-height:1.8!important}}
+.reduced .chime-playing{animation:none!important}@media(prefers-reduced-motion:reduce){.chime-playing{animation:none!important}}
+.rg-cat-hotspot i{position:absolute;display:block;opacity:0;pointer-events:none;filter:drop-shadow(0 2px 3px #554057)}
+.rg-cat-motion-tail{right:5%;bottom:14%;width:32%;height:45%;border:5px solid #f7eae8;border-left:0;border-top:0;border-radius:0 0 80% 0;transform-origin:20% 80%}
+.rg-cat-motion-ears{left:26%;top:9%;width:20%;height:19%;background:#f8ecea;clip-path:polygon(0 100%,20% 0,48% 65%,75% 4%,100% 100%)}
+.rg-cat-motion-paws{left:28%;bottom:16%;width:34%;height:15%;background:radial-gradient(ellipse at 25% 50%,#f8edeb 0 30%,transparent 34%),radial-gradient(ellipse at 75% 50%,#f8edeb 0 30%,transparent 34%)}
+.rg-cat-tail .rg-cat-motion-tail{animation:rg-cat-tail 1.1s ease-in-out 2}
+.rg-cat-ears .rg-cat-motion-ears{animation:rg-cat-ears .9s ease-out 2}
+.rg-cat-roll .rg-cat-motion-paws{animation:rg-cat-paws 1.2s ease-in-out 2}
+@keyframes rg-cat-tail{0%,100%{opacity:0;transform:rotate(-18deg)}25%,70%{opacity:.95}50%{transform:rotate(18deg)}}
+@keyframes rg-cat-ears{0%,100%{opacity:0;transform:translateY(5px)}35%,70%{opacity:.95;transform:translateY(-3px)}}
+@keyframes rg-cat-paws{0%,100%{opacity:0;transform:rotate(-10deg)}30%,75%{opacity:.95}55%{transform:rotate(18deg)}}
+.reduced .rg-cat-hotspot i{animation:none!important}@media(prefers-reduced-motion:reduce){.rg-cat-hotspot i{animation:none!important}}
